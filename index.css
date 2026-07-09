@@ -64,12 +64,14 @@ body{
 }
 #container #letterBackground #letter #content{
     padding: 20px;
+   font-family: 'Great Vibes', cursive;
+   color: #331452;
 }
 
 #letterBackground{
  background-image: url(Images/BackgroundLetter.png);
- width: 650px;
- height: 550px;
+ width: 610px;
+ height: 620px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -79,6 +81,7 @@ body{
 
 #holderImage #closed-env{
 width: 400px;
+
 }
 #container{
     margin-top: 5px;
@@ -89,7 +92,7 @@ width: 400px;
 #holderImage{
    
     width: 100%;
-    height: 40%;
+    height: 45%;
     display: flex;
     align-items: end;
     justify-content: center;
@@ -102,7 +105,7 @@ width: 400px;
     color: #3f1964 ;
     font-weight: bold;
     position: absolute;
-    bottom: 56.7%;
+    bottom: 47%;
 }
 #happyContainer{
     display: flex;
@@ -114,20 +117,20 @@ width: 400px;
 .arrow{
     height: 100px;
     position: absolute;
-    bottom: 45.7%;
+    bottom: 35.7%;
 }
 
 @media (max-width: 500px){
+   
     #holderImage #closed-env{
     width: 250px;
-    position: relative;
-    bottom: 70px;
+    
     z-index: 2;
 }
 .arrow{
     height: 100px;
     position: absolute;
-    bottom: 29%;
+    bottom: 38%;
     z-index: 5;
 }
 #OpenRead{
@@ -135,7 +138,7 @@ width: 400px;
     color: #3f1964 ;
     font-weight: bolder;
     position: absolute;
-    bottom: 39.3%;
+    bottom: 48%;
     z-index: 5;
 }
 
@@ -158,16 +161,16 @@ width: 400px;
 }
 
 #container #letterBackground #letter #content{
-    width: 350px;
-    height: 550px;
+    width: 300px;
+    height: 790px;
 
 }
 
 #letterBackground{
 
  background-image: url(Images/BackgroundLetter.png);
- width: 400px;
- height: 600px;
+ width: 350px;
+ height: 860px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -175,6 +178,11 @@ width: 400px;
  display: none; 
  padding: 15px;
 }
-
+body{
+    height: 130vh;
+}
+#holderImage{
+    height: 25.9%;
+}
 
 }

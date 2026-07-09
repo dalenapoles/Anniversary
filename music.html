@@ -11,12 +11,28 @@
 <body>
    <nav id="navbar">
         <ul>
-            <li></i> <a href="message.html"> <i class="fa-solid fa-envelope"></i>Message</a></li>
-            <li> <a href="music.html"><i class="fa-solid fa-music"></i>Music</a></li>
-            <li> <a href="flower.html"><i class="fa-solid fa-fan"></i>Flower</a></li>
+            <li id="icon1"> <i class="fa-solid fa-envelope"></i> <a href="message.html">Message</a></li>
+            <li id="icon2"> <i class="fa-solid fa-music"></i> <a href="music.html">Music</a></li>
+            <li id="icon3"> <i class="fa-solid fa-fan"></i> <a href="flower.html">Flower</a></li>
 
         </ul>
     </nav>
-    
+    <script >
+        let icon1 = document.getElementById("icon1");
+let icon2 = document.getElementById("icon2");
+let icon3 = document.getElementById("icon3");
+
+
+    document.getElementById("icon3").addEventListener("click", () => {
+    window.location.href = "flower.html";
+  });
+    document.getElementById("icon2").addEventListener("click", () => {
+    window.location.href = "music.html";
+  });
+    document.getElementById("icon1").addEventListener("click", () => {
+    window.location.href = "message.html";
+  });
+
+    </script>
 </body>
 </html>
