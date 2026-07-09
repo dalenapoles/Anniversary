@@ -146,9 +146,35 @@ width: 400px;
 #navbar ul li a{
    display: none;
 }
+
+#navbar ul{
+    height: 90px;
+   color: #575799;
+   font-size: 22px;
+}
 #navbar ul li i{
    color: #575799;
    font-size: 22px;
 }
+
+#container #letterBackground #letter #content{
+    width: 350px;
+    height: 550px;
+
+}
+
+#letterBackground{
+
+ background-image: url(Images/BackgroundLetter.png);
+ width: 400px;
+ height: 600px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ display: none; 
+ padding: 15px;
+}
+
 
 }
