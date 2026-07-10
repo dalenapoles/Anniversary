@@ -14,7 +14,7 @@ enterButton.addEventListener("click", function passChecker () {
         errorMsg.textContent = "The field is Empty"
         console.log("The field is Empty");
     }
-    else if(typePass == rightPassword){
+    else if(typePass == rightPassword  ){
        window.location.href = "message.html"
         console.log("Correct Password")
     }
@@ -32,3 +32,25 @@ passwordInput.addEventListener("input", function () {
    
 });
 
+passwordInput.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // Prevents default actions like submitting a form
+    console.log('Enter key was pressed!');
+    
+    let typePass = passwordInput.value;
+    
+
+    if(typePass == ""){
+        errorMsg.textContent = "The field is Empty"
+        console.log("The field is Empty");
+    }
+    else if(typePass == rightPassword  ){
+       window.location.href = "message.html"
+        console.log("Correct Password")
+    }
+   else {
+         errorMsg.textContent = "Code is Incorrect"
+        console.log("Code is Incorrect")
+    }
+  }
+})
