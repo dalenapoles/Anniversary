@@ -20,16 +20,7 @@ body{
      align-items: center;
      height: 150px;
 }
-#navbar ul li{
-    margin: 15px;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 150px;
-    border-radius: 10px;
-}
+
 #navbar ul li i{
  
   padding: 10px;
@@ -37,27 +28,40 @@ body{
 
 }
 #navbar ul li a{
-    font-weight: bold;
+    margin: 15px;
     color: #575799;
+    font-weight: bold;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
   
 }
-
-
-
-li:hover #point,
-li:hover #icon{
+#point:hover{
+    transition: 0.3s;
     color: white;
-    transition: 0.2s;
-}
-
-#navbar ul li:hover{
-    cursor: pointer;
     background-color: #575799;
-    transition: 0.2s;
-
 }
+#point:hover #icon{
+    transition: 0.3s;
+    color: white;
+   
+}
+#point:active{
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+
+
+
+
+
 
 #closed-env{
     cursor: pointer;
@@ -157,20 +161,18 @@ width: 400px;
 .happyAnn{
     width: 350px;
 }
+#navba ul li a i span{
+    color: black;
+}
+
 
 #navbar ul li a{
-   display: none;
+      height: 90px;
+   color: #575799;
+   font-size: 22px;
 }
 
-#navbar ul{
-    height: 90px;
-   color: #575799;
-   font-size: 22px;
-}
-#navbar ul li i{
-   color: #575799;
-   font-size: 22px;
-}
+
 
 #container #letterBackground #letter #content{
     width: 300px;
@@ -179,7 +181,6 @@ width: 400px;
 }
 
 #letterBackground{
-
  background-image: url(Images/BackgroundLetter.png);
  width: 350px;
  height: 860px;

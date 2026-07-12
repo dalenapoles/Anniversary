@@ -45,7 +45,7 @@ passwordInput.addEventListener('keydown', function(event) {
         console.log("The field is Empty");
     }
     else if(typePass == rightPassword  ){
-       window.location.href = "message.html"
+       window.location.href = "player.html"
         console.log("Correct Password")
     }
    else {

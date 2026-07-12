@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <style>
+    /* Force the layout to span the entire height of the screen */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* The iframe content window fills up the main area */
+    .content-frame {
+      flex-grow: 1;
+      width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- THE IFRAME: This loads your actual pages. It starts on music.html -->
+  <iframe src="music.html" name="site-content" class="content-frame"></iframe>
+
+  <!-- HIDDEN AUDIO STAGE: Your music players live out here permanently -->
+  <!-- They have no design properties because they control the visual cards inside the iframe -->
+  <div id="globalAudioStage" style="display: none;">
+    <div class="pauseOrPlay">
+      <audio src="Audio/01_audio.mp3"></audio>
+    </div>
+    <div class="pauseOrPlay">
+      <audio src="Audio/02_audio.mp3"></audio>
+    </div>
+    <div class="pauseOrPlay">
+      <audio src="Audio/03_audio.mp3"></audio>
+    </div>
+     <div class="pauseOrPlay">
+      <audio src="Audio/04_audio.mp3"></audio>
+    </div>
+  </div>
+
+  <!-- Link your master script directly here -->
+  <script src="music.js"></script>
+</body>
+</html>
