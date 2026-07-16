@@ -1,4 +1,4 @@
-let rightPassword = "iloveyouqessymwua"
+let rightPassword = "dicktime"
 
 let passwordInput = document.getElementById("password");
 let enterButton = document.getElementById("enter");

@@ -4,8 +4,8 @@
 #wholeContainer{
     display: flex;
     align-items: center;
-    justify-content: start;
-    flex-direction: column;
+    justify-content: center;
+  
     height: 50vh;
   
 
@@ -14,41 +14,42 @@
         background-color: #575799;
         margin-top: 15px;
         width: 450px;
-        height: 135px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
       
         border-radius: 30px;
         flex-direction: row;
-        flex-wrap: wrap; 
+
      
     }
 
     #playerSection1{
-        height: 125px;
-        height: 125px;
+        
+       padding: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
         #imgHolder{
             position: relative;
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            
             position: relative;
         }
             #imgHolder img{
-                 width: 110px;
-                height: 110px;
+            
+                width: 100%;
                 border-radius: 20px;
+                
             
             }
             .pauseOrPlay{
                 color: white;
                 opacity: 0.8;
-                height: 50px;
-                width: 50px;
+                height: 50%;
+                width: 50%;
                 background-color: #575799;
                 border-radius: 50px;
                 position: absolute;
@@ -70,7 +71,7 @@
             }
     
 #playerSection2{
-    
+
     width: 320px;
     display: flex;
     align-items: center;
@@ -78,6 +79,7 @@
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    height: 100%;
 }
     #playerSection2 strong{
         font-size: 15px;
@@ -86,4 +88,90 @@
 /*Pause button*/
 .pause{
     display: none;
+}
+
+.musicHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.musicHeader img{
+  width:300px;
+
+}
+.section1{
+    padding-right: 20px;
+}
+@media (max-width: 500px){
+
+    #wholeContainer{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .musicHeader{
+   
+        width:200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+.musicHeader img{
+  width:250px;
+
+}
+#wholeContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 70vh;
+
+
+}
+body{
+    height: 100vh;
+}
+
+}
+
+
+
+@media (max-width: 400px){
+    #playerContainer{
+        height: 90px;
+        width: 300px;
+        
+    }
+    #wholeContainer{
+        height: 60vh;
+    }
+    #imgHolder{
+        width: 80px;
+    }
+     #imgHolder img{
+        height: 100%;
+       
+     }
+
+    .section1 {
+        background-color: white;
+    padding: 0px;
+}
+ .section2 {
+        background-color: rgb(128, 128, 128);
+    padding: 0px;
+}
+#wholeContainer{
+    height: 60vh;
+
+
+}
+body{
+    height: 778px;
+}
+
 }
