@@ -108,6 +108,9 @@
     padding-right: 20px;
 }
 @media (max-width: 500px){
+    .section1{
+    padding-right: 0px;
+}
 
     #wholeContainer{
         display: flex;

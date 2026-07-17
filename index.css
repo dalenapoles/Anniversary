@@ -66,7 +66,9 @@ body{
 #content{
     background-color: white ;
     border-radius: 20px;
-    width: 700px;
+    width: auto;
+    margin: 20px;
+    position: relative;
 }
 #container #letterBackground #letter #content{
     padding: 20px;
@@ -128,6 +130,23 @@ width: 400px;
 }
 
 @media (max-width: 500px){
+    body{
+
+    height: 100%;
+    background: linear-gradient(#9d9dcc, #3d3d7a);
+}
+    #letterBackground{
+ background-image: url(Images/BackgroundLetter.png);
+ width: 350px;
+ height: 860px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ align-content: center;
+ display: none; 
+ padding: 15px;
+}
+    
     #holderImage{
     height: 27vh;
  
@@ -170,28 +189,17 @@ width: 400px;
 #navbar li #point #icon{
     font-size: 25px;
 }
-
-
-}
-
 #container #letterBackground #letter #content{
     width: 300px;
     height: 790px;
 
 }
 
-#letterBackground{
- background-image: url(Images/BackgroundLetter.png);
- width: 350px;
- height: 860px;
- display: flex;
- justify-content: center;
- align-items: center;
- align-content: center;
- display: none; 
- padding: 15px;
+
 }
-    
+
+
+
 
 @media (max-width: 400px){
 #navbar ul li #point{
