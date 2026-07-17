@@ -14,7 +14,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+#error-msg{
+    /* background-color: rgb(0, 0, 0); */
+    left: 44.5%;
+    height: 13px;
+    position: absolute;
+    top: 540px;
+   
+}
     /* background: linear-gradient(#9d9dcc, #575799); */
 
 #navbar ul{
@@ -146,6 +153,14 @@ width: 400px;
  display: none; 
  padding: 15px;
 }
+#error-msg{
+    /* background-color: rgb(0, 0, 0); */
+    left: 31%;
+    height: 13px;
+    position: absolute;
+    top: 540px;
+   
+}
     
     #holderImage{
     height: 27vh;
@@ -194,7 +209,11 @@ width: 400px;
     height: 790px;
 
 }
-
+#error-msg{
+    color: black;
+   position: relative;
+   bottom: 1px;
+}
 
 }
 
@@ -214,5 +233,13 @@ width: 400px;
 #signIn{
   position: absolute;
   top: 140px;
+}
+#error-msg{
+    /* background-color: rgb(0, 0, 0); */
+    left: 21%;
+    height: 13px;
+    position: absolute;
+    top: 330px;
+   
 }
 }
