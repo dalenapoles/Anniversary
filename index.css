@@ -8,6 +8,12 @@ body{
     height: 100vh;
     background: linear-gradient(#9d9dcc, #3d3d7a);
 }
+#signIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
     /* background: linear-gradient(#9d9dcc, #575799); */
 
@@ -197,5 +203,8 @@ width: 400px;
 #navbar li #point #icon{
     font-size: 15px;
 }
-
+#signIn{
+  position: absolute;
+  top: 140px;
+}
 }
